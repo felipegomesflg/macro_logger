@@ -1,5 +1,5 @@
-from file_handler import FileHandler
-from gcp_sender import GCPSender
+from .file_handler import FileHandler
+from .gcp_sender import GCPSender
 
 class LogManager:
     def __init__(self, name, cron_time=60, log_threshold=1000, bucket=None):
