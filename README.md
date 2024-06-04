@@ -1,7 +1,8 @@
 # Macro Logger
 
-![PyPI](https://img.shields.io/pypi/v/macro-logger)
-![GitHub last commit](https://img.shields.io/github/last-commit/username/repository)
+[![PyPI](https://img.shields.io/badge/PyPI-PyPI-red.svg)](https://github.com/felipegomesflg/macro_logger)
+[![GitHub repo](https://img.shields.io/badge/GitHub-Repo-green.svg)](https://github.com/felipegomesflg/macro_logger)
+[![GitHub liscense](https://img.shields.io/badge/GitHub-Liscense-blue.svg)](https://github.com/felipegomesflg/macro_logger/blob/master/LICENSE)
 
 ### Utilização da Biblioteca Macro Logger
 Uma biblioteca de logging para registro de logs em arquivos e envio automático para a GCP.
