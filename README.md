@@ -5,8 +5,24 @@
 [![GitHub liscense](https://img.shields.io/badge/GitHub-Liscense-blue.svg)](https://github.com/felipegomesflg/macro_logger/blob/master/LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/felipegomesflg/macro_logger)
 
-### Utilização da Biblioteca Macro Logger
-Uma biblioteca de logging para registro de logs em arquivos e envio automático para a GCP.
+### Objetivo
+A biblioteca macro_logger tem como objetivo fornecer uma solução abrangente para o registro e gestão de logs em aplicações Python. Ela foi projetada para ser facilmente configurável e extensível, permitindo que os desenvolvedores capturem, armazenem e gerenciem logs de suas aplicações de forma eficiente e segura. Além disso, a biblioteca possui a capacidade de enviar automaticamente os logs para um bucket no Google Cloud Storage (GCP) quando determinadas condições são atendidas, como a quantidade máxima de registros de log.
+
+#### Funcionalidades Principais
+1. **Registro de Logs**: 
+*   A biblioteca permite a criação de logs em quatro níveis de severidade: ``INFO, WARNING, ERROR e DEBUG``.
+*   Os logs são registrados em um arquivo local no formato JSON, facilitando a análise e a leitura.
+
+2. **Rotação de Arquivos de Log:**
+*   Utiliza o ``RotatingFileHandler`` para gerenciar o tamanho dos arquivos de log e a quantidade de backups, garantindo que o espaço em disco não seja excedido.
+
+3.  **Envio Automático para GCP:**
+*   A biblioteca verifica automaticamente se o número de registros de log atingiu um limite predefinido.
+*   Quando esse limite é alcançado, o arquivo de log é enviado para um bucket configurado no Google Cloud Storage, permitindo um armazenamento seguro e escalável.
+
+4. **Configuração Dinâmica:**
+*   Permite a configuração de parâmetros críticos, como o tempo de verificação de logs (``cron_time``), o limite de registros de log (``log_threshold``) e o nome do bucket do GCP através de variáveis de ambiente.
+*   As configurações podem ser facilmente alteradas sem a necessidade de modificar o código fonte.
 
 ### Instalação
 
