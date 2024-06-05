@@ -8,7 +8,11 @@
 ### Objetivo
 A biblioteca macro_logger tem como objetivo fornecer uma solução abrangente para o registro e gestão de logs em aplicações Python. Ela foi projetada para ser facilmente configurável e extensível, permitindo que os desenvolvedores capturem, armazenem e gerenciem logs de suas aplicações de forma eficiente e segura. Além disso, a biblioteca possui a capacidade de enviar automaticamente os logs para um bucket no Google Cloud Storage (GCP) quando determinadas condições são atendidas, como a quantidade máxima de registros de log.
 
+<<<<<<< HEAD
 #### Funcionalidades Principais
+=======
+####Funcionalidades Principais
+>>>>>>> fa375bd44e43576e8a239af4c3dd98610ba2d89b
 1. **Registro de Logs**: 
 *   A biblioteca permite a criação de logs em quatro níveis de severidade: ``INFO, WARNING, ERROR e DEBUG``.
 *   Os logs são registrados em um arquivo local no formato JSON, facilitando a análise e a leitura.
